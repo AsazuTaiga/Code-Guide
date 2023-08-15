@@ -5,7 +5,7 @@
   "icon": "logo.png",
   "description": "Code Guide is a VS Code extension that uses OpenAI's Codex to describe code.",
   "repository": "https://github.com/AsazuTaiga/Code-Guide",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.81.0"
   },
