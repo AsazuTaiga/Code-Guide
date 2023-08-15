@@ -6,7 +6,7 @@ import { marked } from "marked";
 import { langs } from "./languages";
 
 const setApiKey = vscode.commands.registerCommand(
-  "code-guide.setOpenAiKey",
+  "code-guide.setOpenAIKey",
   () => {
     vscode.window
       .showInputBox({
