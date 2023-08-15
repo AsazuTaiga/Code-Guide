@@ -8,8 +8,13 @@ import { langs } from "./languages";
 const setApiKey = vscode.commands.registerCommand(
   "code-guide.setOpenAIKey",
   () => {
+    const currentApiKey = vscode.workspace
+      .getConfiguration("code-guide")
+      .get("apiKey");
+
     vscode.window
       .showInputBox({
+        value: typeof currentApiKey === "string" ? currentApiKey : "",
         placeHolder: "OpenAI API Key",
         prompt: "Enter your OpenAI API key",
       })
